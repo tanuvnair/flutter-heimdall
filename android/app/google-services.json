@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "219743946975",
+    "project_id": "algorisys-heimdall",
+    "storage_bucket": "algorisys-heimdall.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219743946975:android:a9c447ef2de4e91715416a",
+        "android_client_info": {
+          "package_name": "com.algorisys.heimdall"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJpa4u-n2KwsvH3zPsDxMSuhMUiqAE14M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,4 +1,4 @@
-package com.algorisys.flutter_heimdall;
+package com.algorisys.heimdall;
 
 import io.flutter.embedding.android.FlutterActivity;
 
