@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBXbhV2xHh1GiD2bGo6Z8EyC5Tz-8-crrs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>219743946975</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.algorisys.flutterHeimdall</string>
+	<key>PROJECT_ID</key>
+	<string>algorisys-heimdall</string>
+	<key>STORAGE_BUCKET</key>
+	<string>algorisys-heimdall.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:219743946975:ios:4c4a2d9dbffc9ea815416a</string>
+</dict>
+</plist>
