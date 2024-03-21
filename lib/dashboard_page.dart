@@ -25,11 +25,239 @@ class DashboardPageContent extends StatelessWidget {
 class AttendanceHistoryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text(
-          'Attendance History Page',
-          style: TextStyle(fontSize: 24),
+    return Scaffold(
+      backgroundColor: Color(0xFF070808), // Set background color to #070808
+      body: Padding(
+        padding: EdgeInsets.symmetric(vertical: 75, horizontal: 25),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'My Attendance',
+              style: TextStyle(fontSize: 42, color: Colors.white, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 16),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'March 2024',
+                  style: TextStyle(fontSize: 24, color: Colors.white),
+                ),
+                IconButton(
+                  onPressed: () {
+                    // Handle calendar button tap
+                  },
+                  icon: Icon(Icons.calendar_today, color: Colors.white),
+                ),
+              ],
+            ),
+            SizedBox(height: 16),
+            // Pill-shaped containers displaying attendance details
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Colors.deepPurple, // Background color
+              ),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Fri', // Day
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                      Text(
+                        '22', // Date
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.access_time, color: Colors.white),
+                          SizedBox(width: 5),
+                          Text(
+                            '09:00 AM', // Check-in time
+                            style: TextStyle(fontSize: 20, color: Colors.white),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Icon(Icons.access_time, color: Colors.white),
+                          SizedBox(width: 5),
+                          Text(
+                            '03:00 PM', // Check-out time
+                            style: TextStyle(fontSize: 20, color: Colors.white),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 16),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Colors.deepPurple, // Background color
+              ),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Thu', // Day
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                      Text(
+                        '21', // Date
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.access_time, color: Colors.white),
+                          SizedBox(width: 5),
+                          Text(
+                            '10:00 AM', // Check-in time
+                            style: TextStyle(fontSize: 20, color: Colors.white),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Icon(Icons.access_time, color: Colors.white),
+                          SizedBox(width: 5),
+                          Text(
+                            '01:00 PM', // Check-out time
+                            style: TextStyle(fontSize: 20, color: Colors.white),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 16),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Colors.deepPurple, // Background color
+              ),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Wed', // Day
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                      Text(
+                        '20', // Date
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.access_time, color: Colors.white),
+                          SizedBox(width: 5),
+                          Text(
+                            '09:00 AM', // Check-in time
+                            style: TextStyle(fontSize: 20, color: Colors.white),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Icon(Icons.access_time, color: Colors.white),
+                          SizedBox(width: 5),
+                          Text(
+                            '06:00 PM', // Check-out time
+                            style: TextStyle(fontSize: 20, color: Colors.white),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 16),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Colors.deepPurple, // Background color
+              ),
+              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Tue', // Day
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                      Text(
+                        '19', // Date
+                        style: TextStyle(fontSize: 20, color: Colors.white),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.access_time, color: Colors.white),
+                          SizedBox(width: 5),
+                          Text(
+                            '07:00 AM', // Check-in time
+                            style: TextStyle(fontSize: 20, color: Colors.white),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Icon(Icons.access_time, color: Colors.white),
+                          SizedBox(width: 5),
+                          Text(
+                            '01:30 PM', // Check-out time
+                            style: TextStyle(fontSize: 20, color: Colors.white),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
@@ -179,11 +407,11 @@ class _DashboardPageState extends State<DashboardPage> {
             items: <BottomNavigationBarItem>[
               BottomNavigationBarItem(
                 icon: Icon(Icons.calendar_today), // Set calendar icon for the left item
-                label: 'Attendance History',
+                label: 'My Attendance',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.done_all), // Set check-in icon for the middle item
-                label: 'Check In',
+                label: 'Clock In',
               ),
               BottomNavigationBarItem(
                 icon: Icon(Icons.person), // Set profile icon for the right item
