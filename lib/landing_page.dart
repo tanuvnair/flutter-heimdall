@@ -34,6 +34,7 @@ class LandingPage extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   side: BorderSide(color: Colors.white), // Set the outline color
                   backgroundColor: Colors.transparent, // Set the background color to transparent
+                  padding: EdgeInsets.symmetric(vertical: 16, horizontal: 32), // Adjust padding to make the button bigger
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,

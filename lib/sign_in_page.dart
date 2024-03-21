@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_heimdall/forgot_password_page.dart';
+import 'forgot_password_page.dart'; // Import the forgot password page
 
 class SignInPage extends StatelessWidget {
   const SignInPage({Key? key}) : super(key: key);
@@ -25,47 +27,68 @@ class SignInPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              TextField(
-                style: TextStyle(color: Colors.white), // Set the color of text field content
-                decoration: InputDecoration(
-                  labelText: 'Email',
-                  labelStyle: TextStyle(color: Colors.white), // Set the color of label text
-                  border: OutlineInputBorder(),
+              Text(
+                'Sign In',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 32, // Increase the font size
+                  fontWeight: FontWeight.bold, // Make the text bold
                 ),
+                textAlign: TextAlign.center,
               ),
-              SizedBox(height: 16),
-              TextField(
-                style: TextStyle(color: Colors.white), // Set the color of text field content
-                obscureText: true,
-                decoration: InputDecoration(
-                  labelText: 'Password',
-                  labelStyle: TextStyle(color: Colors.white), // Set the color of label text
-                  border: OutlineInputBorder(),
-                ),
+              SizedBox(height: 20), // Add spacing between header and form fields
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  TextField(
+                    style: TextStyle(color: Colors.white), // Set the color of text field content
+                    decoration: InputDecoration(
+                      labelText: 'Email',
+                      labelStyle: TextStyle(color: Colors.white), // Set the color of label text
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                  SizedBox(height: 16),
+                  TextField(
+                    style: TextStyle(color: Colors.white), // Set the color of text field content
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      labelText: 'Password',
+                      labelStyle: TextStyle(color: Colors.white), // Set the color of label text
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                  SizedBox(height: 16), // Add space between password field and "Forgot Password" text
+                  GestureDetector(
+                    onTap: () {
+                      // Navigate to forgot password page
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ForgotPasswordPage()),
+                      );
+                    },
+                    child: Text(
+                      'Forgot Password?',
+                      style: TextStyle(
+                        color: Colors.white,
+                        decoration: TextDecoration.underline, // Add underline to indicate it's clickable
+                      ),
+                    ),
+                  ),
+                ],
               ),
-              SizedBox(height: 16),
+              SizedBox(height: 32), // Add more space between "Forgot Password" text and sign-in button
               ElevatedButton(
                 onPressed: () {
-                  // Navigate to the sign-in page
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(builder: (context) => ),
-                  // );
+                  // Add logic to send reset password email
                 },
                 style: ElevatedButton.styleFrom(
-                  side: BorderSide(color: Colors.white), // Set the outline color
-                  backgroundColor: Colors.transparent, // Set the background color to transparent
+                  primary: Colors.white, // Set button background color to white
+                  onPrimary: Colors.black, // Set button text color to black
                 ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Icon(Icons.person, color: Colors.white), // User icon
-                    SizedBox(width: 8), // Add spacing between icon and text
-                    Text(
-                      'SIGN IN',
-                      style: TextStyle(color: Colors.white), // Set text color to white
-                    ),
-                  ],
+                child: Text(
+                  'Sign In',
+                  style: TextStyle(color: Colors.black), // Set text color to black
                 ),
               ),
             ],
