@@ -56,7 +56,7 @@ class ProfilePage extends StatelessWidget {
               style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold), // Set text color to white and make bold
             ),
             Text(
-              'John Doe',
+              'Tanuv Nair',
               style: TextStyle(fontSize: 18, color: Colors.white), // Set text color to white
             ),
             SizedBox(height: 16),
@@ -65,7 +65,7 @@ class ProfilePage extends StatelessWidget {
               style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold), // Set text color to white and make bold
             ),
             Text(
-              'john.doe@example.com',
+              'tanuvnair@gmail.com',
               style: TextStyle(fontSize: 18, color: Colors.white), // Set text color to white
             ),
             SizedBox(height: 16),
@@ -74,7 +74,7 @@ class ProfilePage extends StatelessWidget {
               style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold), // Set text color to white and make bold
             ),
             Text(
-              '+1234567890',
+              '+917738322523',
               style: TextStyle(fontSize: 18, color: Colors.white), // Set text color to white
             ),
             SizedBox(height: 16),
