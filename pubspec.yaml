@@ -61,6 +61,9 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/logos/heimdall-1000x1000-transparent.png
+    - assets/Circle1.png
+    - assets/Circle2.png
+    - assets/Blob1.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -74,12 +77,27 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Oswald
+    - family: Inter
       fonts:
-        - asset: assets/fonts/Oswald-Regular.ttf
-    - family: Khula
-      fonts:
-        - asset: assets/fonts/Khula-Regular.ttf
+        - asset: assets/fonts/Inter-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/Inter-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/Inter-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Inter-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/Inter-Black.ttf
+          weight: 900
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
