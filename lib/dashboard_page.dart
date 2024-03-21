@@ -27,7 +27,65 @@ class DashboardPageContent extends StatelessWidget {
               style: TextStyle(fontSize: 42, color: Colors.white, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 16),
-        ],
+            Text(
+              "Today's Status", // Subheading
+              style: TextStyle(fontSize: 24, color: Colors.white, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 16),
+            SizedBox(
+              width: double.infinity, // Set width to take the whole available space
+              child: Container(
+                padding: EdgeInsets.all(32),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30), // Adjust border radius to make it pill-shaped
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween, // Align text to opposite ends
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Check In:',
+                          style: TextStyle(fontSize: 18, color: Colors.black),
+                        ),
+                        SizedBox(height: 8),
+                        Text(
+                          '09:00 AM',
+                          style: TextStyle(fontSize: 18, color: Color(0xFF333333)), // Slightly darker grey
+                        ),
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      children: [
+                        Text(
+                          'Check Out:',
+                          style: TextStyle(fontSize: 18, color: Colors.black),
+                        ),
+                        SizedBox(height: 8),
+                        Text(
+                          '06:00 PM',
+                          style: TextStyle(fontSize: 18, color: Color(0xFF333333)), // Slightly darker grey
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+      floatingActionButton: Padding(
+        padding: const EdgeInsets.all(12.0), // Add padding to make button bigger
+        child: FloatingActionButton(
+          onPressed: () {
+            // Add functionality here
+          },
+          backgroundColor: Colors.deepPurple, // Button background color
+          child: Icon(Icons.check, color: Colors.white), // Tickmark icon
         ),
       ),
     );
@@ -387,12 +445,6 @@ class _DashboardPageState extends State<DashboardPage> {
       },
       child: Scaffold(
         body: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/Blob1.png'),
-              fit: BoxFit.cover,
-            ),
-          ),
           child: IndexedStack(
             index: _currentIndex,
             children: [
