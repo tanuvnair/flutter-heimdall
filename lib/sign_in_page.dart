@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_heimdall/dashboard_page.dart';
 import 'package:flutter_heimdall/forgot_password_page.dart';
-import 'dashboard_page.dart';
 
 class SignInPage extends StatelessWidget {
   const SignInPage({Key? key}) : super(key: key);
@@ -79,7 +78,7 @@ class SignInPage extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 32), // Add more space between "Forgot Password" text and sign-in button
-              ElevatedButton(
+              ElevatedButton.icon(
                 onPressed: () {
                   // Navigate to dashboard
                   Navigator.push(
@@ -88,12 +87,14 @@ class SignInPage extends StatelessWidget {
                   );
                 },
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.white, // Set button background color to white
-                  onPrimary: Colors.black, // Set button text color to black
+                  primary: Colors.deepPurple, // Set button background color to deepPurple
+                  onPrimary: Colors.white, // Set button text color to white
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)), // Add rounded corners to button
                 ),
-                child: Text(
+                icon: Icon(Icons.login), // Add icon to button
+                label: Text(
                   'Sign In',
-                  style: TextStyle(color: Colors.black), // Set text color to black
+                  style: TextStyle(color: Colors.white), // Set text color to white
                 ),
               ),
             ],

@@ -92,24 +92,40 @@ class ProfilePage extends StatelessWidget {
               children: [
                 ElevatedButton.icon(
                   onPressed: () {
-                    // Navigate to edit profile page
                   },
-                  icon: Icon(Icons.edit),
-                  label: Text('Edit Profile'),
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.deepPurple, // Set button background color to deepPurple
+                    onPrimary: Colors.white, // Set button text color to white
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)), // Add rounded corners to button
+                  ),
+                  icon: Icon(Icons.edit), // Add icon to button
+                  label: Text(
+                    'Edit Profile',
+                    style: TextStyle(color: Colors.white), // Set text color to white
+                  ),
                 ),
+
                 SizedBox(width: 16),
                 ElevatedButton.icon(
                   onPressed: () {
-                    // Sign out
+                    // Sign Out
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => LandingPage()),
                     );
-
                   },
-                  icon: Icon(Icons.logout),
-                  label: Text('Sign Out'),
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.deepPurple, // Set button background color to deepPurple
+                    onPrimary: Colors.white, // Set button text color to white
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)), // Add rounded corners to button
+                  ),
+                  icon: Icon(Icons.logout), // Add icon to button
+                  label: Text(
+                    'Sign Out',
+                    style: TextStyle(color: Colors.white), // Set text color to white
+                  ),
                 ),
+
               ],
             ),
           ],
