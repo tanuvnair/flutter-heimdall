@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_heimdall/dashboard_page.dart';
 import 'package:flutter_heimdall/forgot_password_page.dart';
-import 'forgot_password_page.dart'; // Import the forgot password page
+import 'dashboard_page.dart';
 
 class SignInPage extends StatelessWidget {
   const SignInPage({Key? key}) : super(key: key);
@@ -22,7 +23,7 @@ class SignInPage extends StatelessWidget {
           ),
         ),
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(24),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -80,7 +81,11 @@ class SignInPage extends StatelessWidget {
               SizedBox(height: 32), // Add more space between "Forgot Password" text and sign-in button
               ElevatedButton(
                 onPressed: () {
-                  // Add logic to send reset password email
+                  // Navigate to dashboard
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => DashboardPage()),
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   primary: Colors.white, // Set button background color to white
