@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_heimdall/landing_page.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({Key? key}) : super(key: key);
@@ -38,11 +39,80 @@ class AttendanceHistoryPage extends StatelessWidget {
 class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text(
-          'Profile Page',
-          style: TextStyle(fontSize: 24),
+    return Scaffold(
+      backgroundColor: Color(0xFF070808), // Set background color to #070808
+      body: Padding(
+        padding: EdgeInsets.symmetric(vertical: 75, horizontal: 25),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Profile',
+              style: TextStyle(fontSize: 42, color: Colors.white, fontWeight: FontWeight.bold), // Header style
+            ),
+            SizedBox(height: 16), // Space between header and content
+            Text(
+              'Name:',
+              style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold), // Set text color to white and make bold
+            ),
+            Text(
+              'John Doe',
+              style: TextStyle(fontSize: 18, color: Colors.white), // Set text color to white
+            ),
+            SizedBox(height: 16),
+            Text(
+              'Email:',
+              style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold), // Set text color to white and make bold
+            ),
+            Text(
+              'john.doe@example.com',
+              style: TextStyle(fontSize: 18, color: Colors.white), // Set text color to white
+            ),
+            SizedBox(height: 16),
+            Text(
+              'Phone Number:',
+              style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold), // Set text color to white and make bold
+            ),
+            Text(
+              '+1234567890',
+              style: TextStyle(fontSize: 18, color: Colors.white), // Set text color to white
+            ),
+            SizedBox(height: 16),
+            Text(
+              'Role:',
+              style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold), // Set text color to white and make bold
+            ),
+            Text(
+              'Developer',
+              style: TextStyle(fontSize: 18, color: Colors.white), // Set text color to white
+            ),
+            SizedBox(height: 32),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton.icon(
+                  onPressed: () {
+                    // Navigate to edit profile page
+                  },
+                  icon: Icon(Icons.edit),
+                  label: Text('Edit Profile'),
+                ),
+                SizedBox(width: 16),
+                ElevatedButton.icon(
+                  onPressed: () {
+                    // Sign out
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => LandingPage()),
+                    );
+
+                  },
+                  icon: Icon(Icons.logout),
+                  label: Text('Sign Out'),
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
