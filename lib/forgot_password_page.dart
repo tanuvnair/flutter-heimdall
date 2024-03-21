@@ -54,17 +54,18 @@ class ForgotPasswordPage extends StatelessWidget {
                   ),
                 ),
                 SizedBox(height: 20),
-                ElevatedButton(
+                ElevatedButton.icon(
                   onPressed: () {
-                    // Add logic to send reset password email
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.white, // Set button background color to white
-                    onPrimary: Colors.black, // Set button text color to black
+                    primary: Colors.deepPurple, // Set button background color to deepPurple
+                    onPrimary: Colors.white, // Set button text color to white
+                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)), // Add rounded corners to button
                   ),
-                  child: Text(
-                    'Reset Password',
-                    style: TextStyle(color: Colors.black), // Set text color to black
+                  icon: Icon(Icons.mail), // Add icon to button
+                  label: Text(
+                    'Send Email',
+                    style: TextStyle(color: Colors.white), // Set text color to white
                   ),
                 ),
               ],

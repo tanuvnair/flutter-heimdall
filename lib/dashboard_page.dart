@@ -11,11 +11,23 @@ class DashboardPage extends StatefulWidget {
 class DashboardPageContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text(
-          'Content for Check In',
-          style: TextStyle(fontSize: 24),
+    return Scaffold(
+      backgroundColor: Color(0xFF070808), // Set background color to #070808
+      body: Padding(
+        padding: EdgeInsets.symmetric(vertical: 75, horizontal: 25),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Welcome,',
+              style: TextStyle(fontSize: 42, color: Colors.white, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'Tanuv',
+              style: TextStyle(fontSize: 42, color: Colors.white, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 16),
+        ],
         ),
       ),
     );
